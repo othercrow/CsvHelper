@@ -55,6 +55,33 @@ namespace CsvHelper.Configuration
 		public virtual bool IsIndexSet { get; set; }
 
 		/// <summary>
+		/// Gets or sets a value indicating whether the field should be ignored.
+		/// </summary>
+		public virtual bool Ignore { get; set; }
+
+		/// <summary>
+		/// Gets or sets the default value used when a CSV field is empty.
+		/// </summary>
+		public virtual object Default { get; set; }
+
+		/// <summary>
+		/// Gets or sets a value indicating whether this instance is default value set.
+		/// the default value was explicitly set. True if it was
+		/// explicitly set, otherwise false.
+		/// </summary>
+		public virtual bool IsDefaultSet { get; set; }
+
+		/// <summary>
+		/// Gets or sets the constant value used for every record.
+		/// </summary>
+		public virtual object Constant { get; set; }
+
+		/// <summary>
+		/// Gets or sets a value indicating if a constant was explicitly set.
+		/// </summary>
+		public virtual bool IsConstantSet { get; set; }
+
+		/// <summary>
 		/// Initializes a new instance of the <see cref="ParameterMapData"/> class.
 		/// </summary>
 		/// <param name="parameter">The constructor parameter.</param>
